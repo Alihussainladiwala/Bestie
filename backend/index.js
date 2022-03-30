@@ -72,7 +72,7 @@ app.get("/getProducts",(req,res) => {
         }
        else{
          res.send(result);
-         res.send({message : "Products displayed"});
+        //  res.send({message : "Products displayed"});
        }
 })
 })
