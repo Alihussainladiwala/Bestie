@@ -6,7 +6,7 @@ const cors = require ("cors");
 app.use(express.json());
 app.use(
     cors({
-      origin: ["http://localhost:3001"],
+      origin: ["http://localhost:3000"],
       methods: ["GET", "POST"],
       credentials: true,
     })
@@ -26,6 +26,7 @@ app.listen(3001, () => {
 
 app.post("/createCart",(req,res) => {
 
+  
     const userid = req.body.user_id;
     console.log('body: ',req.body);
     console.log(userid);
